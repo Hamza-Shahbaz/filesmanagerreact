@@ -25,19 +25,19 @@ const FilesManager = ({previousFolder, item}) => {
 
     const itemsList = item.map((elem) => {
         if (elem.type == "Folder") {
-            return <Box sx={size} onClick={() => handleClick(elem)}>
+            return <Box sx={size} onDoubleClick={() => handleClick(elem)}>
                 <FolderIcon sx={{fontSize:'4rem'}}/>
                 <Typography>{elem.name}</Typography>
             </Box>
         }
         if (elem.type == "Image") {
-            return <Box sx={size} onClick={() => handleClick(elem)}>
+            return <Box sx={size} onDoubleClick={() => handleClick(elem)}>
                 <img src={`/src/assets/${elem.thumbnail}`} width="40rem" height="40rem"/>
                 <Typography >{elem.name}.{elem.format}</Typography>
             </Box>
         }
         if (elem.type == "Document") {
-            return <Box sx={size} onClick={() => handleClick(elem)}>
+            return <Box sx={size} onDoubleClick={() => handleClick(elem)}>
                 <InsertDriveFileIcon sx={{fontSize:'4rem'}}/>
                 <Typography>{elem.name}.{elem.format}</Typography>
             </Box>
@@ -70,7 +70,7 @@ const FilesManager = ({previousFolder, item}) => {
             flexDirection:'row',
             backgroundColor:'black'
         }}>
-            {previousFolder && internalFile == "" && <Box sx={size} onClick={() => handlePreviousFolder()}>
+            {previousFolder && internalFile == "" && <Box sx={size} onDoubleClick={() => handlePreviousFolder()}>
                 <FolderIcon sx={{fontSize:'4rem'}}/>
                 <Typography>...</Typography>
             </Box>}
