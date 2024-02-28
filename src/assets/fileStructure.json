@@ -1,0 +1,54 @@
+{
+    "files" : [
+        {
+            "name": "ExampleDir",
+            "type": "Folder",
+            "children": [
+                {
+                    "name": "Example",
+                    "type" : "Document",
+                    "format" : "txt"
+                },
+                {
+                    "name": "second",
+                    "type" : "Folder",
+                    "children" : [
+                        {
+                            "name": "Example2",
+                            "type" : "Document",
+                            "format" : "txt"
+                        }
+                    ]
+                },
+                {
+                    "name": "third",
+                    "type" : "Folder",
+                    "children" : [
+                        {
+                            "name": "Example3",
+                            "type" : "Document",
+                            "format" : "txt"
+                        },
+                        {
+                            "name" : "Fourth",
+                            "type": "Folder",
+                            "children" : [
+                                {
+                                    "name" : "New Demo",
+                                    "type" : "Document",
+                                    "format" : "txt"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name" : "Demo",
+            "type" : "Image",
+            "format" : "png",
+            "thumbnail" : "download.png"
+        }
+    ]
+}
